@@ -1,0 +1,19 @@
+pada pertemuan ini tentang pagination
+
+pagination = teknik untuk membetasi data yyg tampil di halaman web kita jadi beberapa halaman
+
+ pagination = menambahkan berupa tombol untuk pindah ke halaman berikutnya
+
+menggunakan keyword limit
+
+kode keyword LIMIT dari index ke berapa, berapa data misal ($mahasiswa = query("SELECT * FROM mahasiswa LIMIT 0, 3  ");
+round = membulatkan angka
+floor = membulatkan angka  ke bawah
+ceil = membulatkan ke atas
+
+//pengkondisian menggunakan 
+//menggunakan operator ternary
+$halamanAktif = (isset($_GET["halaman"]) ) ? $_GET["halaman"] : 1;
+maksudnya adalah cek jika nilainya true maka halaman aktif diisi dengan halaman yg diambil dari link
+jika false (:) maka nilainya 1 / ke halaman 1.
+
